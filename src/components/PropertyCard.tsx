@@ -31,16 +31,19 @@ const PropertyCard = ({
   discount,
 }: PropertyCardProps) => {
   return (
-    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 hover:scale-105">
       <CardHeader className="p-0">
         <div className="relative">
           <img src={image} alt={title} className="w-full h-48 object-cover" />
-          <Badge className="absolute top-3 left-3 bg-red-500 text-white">
-            -{discount}
+          <Badge className="absolute top-3 left-3 bg-gradient-to-r from-red-500 to-red-600 text-white font-bold px-3 py-1">
+            Скидка {discount}
           </Badge>
-          <Badge className="absolute top-3 right-3 bg-slate-800 text-white">
+          <Badge className="absolute top-3 right-3 bg-slate-800/90 text-white">
             {propertyType}
           </Badge>
+          <div className="absolute bottom-3 left-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-semibold">
+            Потенциал +150%
+          </div>
         </div>
       </CardHeader>
 
@@ -51,16 +54,26 @@ const PropertyCard = ({
           <span className="text-sm">{location}</span>
         </div>
 
-        <div className="space-y-2 mb-4">
+        <div className="space-y-3 mb-4">
           <div className="flex justify-between items-center">
-            <span className="text-sm text-slate-600">Начальная цена:</span>
-            <span className="font-bold text-green-600">{startingBid}</span>
+            <span className="text-sm text-slate-600">Стартовая цена:</span>
+            <span className="font-bold text-2xl text-green-600">
+              {startingBid}
+            </span>
           </div>
           <div className="flex justify-between items-center">
             <span className="text-sm text-slate-600">Рыночная стоимость:</span>
-            <span className="text-sm line-through text-slate-400">
+            <span className="text-lg line-through text-slate-400">
               {marketValue}
             </span>
+          </div>
+          <div className="bg-green-50 p-2 rounded">
+            <div className="text-sm font-semibold text-green-700">
+              Экономия:{" "}
+              {parseInt(marketValue.replace(/\D/g, "")) -
+                parseInt(startingBid.replace(/\D/g, ""))}{" "}
+              ₽
+            </div>
           </div>
         </div>
 

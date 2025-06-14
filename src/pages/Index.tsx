@@ -14,14 +14,15 @@ const Index = () => {
       <Features />
       <PropertyShowcase />
 
-      <section className="py-16 bg-white">
+      <section className="py-20 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
-              Начните инвестировать уже сегодня
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+              Станьте частью элитного клуба инвесторов
             </h2>
-            <p className="text-lg text-slate-600">
-              Заполните форму и получите персональную подборку объектов
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Получите персональную подборку премиальных объектов и начните
+              зарабатывать на недвижимости уже через 30 дней
             </p>
           </div>
           <InvestorForm />

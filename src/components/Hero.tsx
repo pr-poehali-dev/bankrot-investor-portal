@@ -7,11 +7,12 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-amber-200 bg-clip-text text-transparent">
-            Инвестируйте в недвижимость с торгов банкротства
+            Недвижимость с торгов банкротства — доходность до 200%
           </h1>
           <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto">
-            Эксклюзивные объекты недвижимости по ценам до 70% ниже рыночной
-            стоимости. Профессиональная поддержка на каждом этапе сделки.
+            Получите доступ к эксклюзивным объектам недвижимости со скидками
+            30-70% от рыночной стоимости. Полное юридическое сопровождение и
+            гарантия чистоты сделок.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -36,17 +37,17 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             <div className="text-center">
               <div className="text-3xl font-bold text-amber-400 mb-2">
-                2,400+
+                3,800+
               </div>
               <div className="text-slate-300">Объектов в базе</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-amber-400 mb-2">45%</div>
-              <div className="text-slate-300">Средняя экономия</div>
+              <div className="text-3xl font-bold text-amber-400 mb-2">65%</div>
+              <div className="text-slate-300">Средняя скидка от рынка</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-amber-400 mb-2">
-                1,200+
+                2,100+
               </div>
               <div className="text-slate-300">Успешных инвесторов</div>
             </div>
